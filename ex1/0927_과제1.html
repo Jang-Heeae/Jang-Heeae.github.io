@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>9월 27일 실습 - jQuery</title>
+    <link href="0927_과제1.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="button01">
+        <div id="target01">
+            <p class="menuitem"><a href="#">ENTP</a></p>
+            <p class="menuitem"><a href="#">INFJ</a></p>
+            <p class="menuitem"><a href="#">INTJ</a></p>
+        </div>
+    </div>
+    <div id="target02"></div>
+    
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script>
+        $('#button01').hover(
+            function(){
+                $('#target01').fadeIn(300);
+            },
+            function(){
+                $('#target01').fadeOut(300);
+            }
+        );
+    </script>
+</body>
+    
+</html>
