@@ -3,60 +3,31 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>미디어쿼리를 활용한 반응형웹 이런 방식도 가능</title>
-    <style>
-        html {
-            font-size: 16px;
-        }
-        #desktop {
-            display: block;
-            width: 100%;
-            height: 1200px;
-            background-color: azure;
-        }
-        #tablet {
-            display: none;
-            width: 100%;
-            height: 1200px;
-            background-color:chartreuse;
-        }
-        #mobile {
-            display: none;
-            width: 100%;
-            height: 1200px;
-            background-color:brown;
-        }
-        @media (max-width: 1024px) {
-            #desktop {
-                display: none;
-            }
-            #tablet {
-                display: block;
-            }
-        }
-        @media (max-width: 640px) {
-            #tablet {
-                display: none;
-            }
-            #mobile {
-                display: block;
-            }
-        }
-    </style>
+    <title>9월 27일 실습 - jQuery</title>
+    <link href="0927_과제1.css" rel="stylesheet">
 </head>
 
 <body>
-    <div id="desktop">
-        데스크탑 버전 코드는 여기로
-        <p>데스크탑 텍스트 추가</p>
-        <img src="image01.jpg">
+    <div id="button01">
+        <div id="target01">
+            <p class="menuitem"><a href="#">ENTP</a></p>
+            <p class="menuitem"><a href="#">INFJ</a></p>
+            <p class="menuitem"><a href="#">INTJ</a></p>
+        </div>
     </div>
-    <div id="tablet">
-        태블릿 버전 코드는 여기로
-    </div>
-    <div id="mobile">
-        모바일 버전 코드는 여기로
-    </div>
+    <div id="target02"></div>
+    
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script>
+        $('#button01').hover(
+            function(){
+                $('#target01').fadeIn(300);
+            },
+            function(){
+                $('#target01').fadeOut(300);
+            }
+        );
+    </script>
 </body>
     
 </html>
