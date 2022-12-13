@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Project_999</title>
+    <link href="project999.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="none"><p>화면_크기를_키워_주세요_</p>
+        <div id="box">
+            <div id="left_u"></div>
+            <div id="left_d"></div>
+            <div id="right_u"></div>
+            <div id="right_d"></div>
+        </div>
+    </div>
+    <div id="main">
+        <a href="main.html" target="_self">
+            <div id="spider"></div></a>
+        <div id="tv">
+            <div id="antenna1"></div>
+            <div id="antenna2"></div>
+        </div>
+        <div id="tv_frame">
+            <div id="dial">
+                <img src="img/dial.png">
+            </div>
+            <div id="dial2">
+                <img src="img/dial2.png">
+            </div>
+            <div id="frame1"></div>
+            <div id="frame2"></div>
+            <div id="frame3"></div>
+            <div id="frame4"></div>
+        </div>
+        <div id="lbox">
+            <div id="line1"></div>
+            <div id="line2"></div>
+            <div id="line3"></div>
+            <div id="line4"></div>
+        </div>
+        <div id="content2">
+            <h1>꾸의_9석을_찾아보세요_</h1>
+        </div>
+        <div id="button5"></div>
+        <div id="video"></div>
+        <div id="play"></div>
+        <video src="video/video1.mp4" id="ani" controls autoplay muted></video>
+        <div id="button6"></div>
+        <div id="video2"></div>
+        <div id="play2"></div>
+        <video src="video/video2.mp4" id="ani2" controls autoplay muted></video>
+        <div id="button7"></div>
+        <div id="video3"></div>
+        <div id="play3"></div>
+        <video src="video/video3.mp4" id="ani3" controls autoplay muted></video>
+        <div id="button8"></div>
+        <div id="video4"></div>
+        <div id="play4"></div>
+        <video src="video/video4.mp4" id="ani4" controls autoplay muted></video>
+        <div id="menu1">
+            <div id="menuname1">
+                <div class="menuitem1"><p class="menuitem"><a href="menu1.html">OO이_좋아하는_9석_</a></p></div>
+            </div>
+        </div>
+        <div id="menu2">
+            <div id="menuname2">
+                <div class="menuitem2"><p class="menuitem"><a href="menu2.html">꾸의_9석_탐9_생활_</a></p></div>
+            </div>
+        </div>
+        <div id="menu3">
+            <div id="menuname3">
+                <div class="menuitem3"><p class="menuitem"><a href="menu3.html">대9_9석_MAP_</a></p></div>
+            </div>
+        </div>
+        <div id="menu4">
+            <div id="menuname4">
+                <p id="menuitem4-1"><a href="menu1.html">OO이_좋아하는_9석_</a></p>
+                <p id="menuitem4-2"><a href="menu2.html">꾸의_9석_탐9_생활_</a></p>
+                <p id="menuitem4-3"><a href="menu3.html">대9_9석_MAP_</a></p>
+                <p id="menuitem4-4"><a href="team_999.html">TEAM_999_</a></p>
+            </div>
+        </div>
+    </div>
+
+    <script type=text/javascript src="js/jquery-3.6.1.js"></script>
+    <script>
+         $('#menu1').hover(
+            function(){
+                $('#menuname1').stop(true).fadeIn(200);
+            },
+            function(){
+                $('#menuname1').stop(true).fadeOut(200);
+            }
+        );
+
+        $('#menu2').hover(
+            function(){
+                $('#menuname2').stop(true).fadeIn(200);
+            },
+            function(){
+                $('#menuname2').stop(true).fadeOut(200);
+            }
+        );
+
+        $('#menu3').hover(
+            function(){
+                $('#menuname3').stop(true).fadeIn(200);
+            },
+            function(){
+                $('#menuname3').stop(true).fadeOut(200);
+            }
+        );
+
+        /* jQuery의 delay() 메소드로 애니메이션의 지연 효과를 줌 */
+        $('#menu4').hover(function(){
+            $('#menuitem4-1').stop(true).fadeIn(200);
+            $('#menuitem4-2').stop(true).delay(300).fadeIn(200);
+            $('#menuitem4-3').stop(true).delay(600).fadeIn(200);
+            $('#menuitem4-4').stop(true).delay(900).fadeIn(200);
+        },
+        function(){
+            $('#menuitem4-1').stop(true).fadeOut(200);
+            $('#menuitem4-2').stop(true).fadeOut(200);
+            $('#menuitem4-3').stop(true).fadeOut(200);
+            $('#menuitem4-4').stop(true).fadeOut(200);
+        }
+        );
+
+        setInterval(function(){
+        $('#button5').animate({'opacity':0}, 100, function(){
+            $('#button5').animate({'opacity': 0.2}, 450);
+        });
+       }, 800);
+
+       setInterval(function(){
+        $('#button6').animate({'opacity':0}, 100, function(){
+            $('#button6').animate({'opacity': 0.2}, 450);
+        });
+       }, 800);
+
+       setInterval(function(){
+        $('#button7').animate({'opacity':0}, 100, function(){
+            $('#button7').animate({'opacity': 0.2}, 450);
+        });
+       }, 800);
+
+       setInterval(function(){
+        $('#button4').animate({'opacity':0}, 100, function(){
+            $('#button4').animate({'opacity': 0.2}, 450);
+        });
+       }, 800);
+
+        $('#button5').hover(
+            function(){
+                $('#video').stop(true).fadeIn(300);
+            },
+            function(){
+                $('#video').stop(true).fadeOut(3000);
+            }
+        );
+
+        $('#button5').hover(
+            function(){
+                $('#play').stop(true).fadeIn(300);
+            },
+            function(){
+                $('#play').stop(true).fadeOut(3000);
+            }
+        );
+
+        $('#button5').hover(
+            function(){
+                $('#ani2').stop(true).fadeOut(0);
+            }
+        );
+
+        $('#button5').hover(
+            function(){
+                $('#ani3').stop(true).fadeOut(0);
+            }
+        );
+
+        $('#button5').hover(
+            function(){
+                $('#ani4').stop(true).fadeOut(0);
+            }
+        );
+
+        $('#button6').hover(
+            function(){
+                $('#video2').stop(true).fadeIn(300);
+            },
+            function(){
+                $('#video2').stop(true).fadeOut(3000);
+            }
+        );
+
+        $('#button6').hover(
+            function(){
+                $('#play2').stop(true).fadeIn(300);
+            },
+            function(){
+                $('#play2').stop(true).fadeOut(3000);
+            }
+        );
+
+        $('#button6').hover(
+            function(){
+                $('#ani').stop(true).fadeOut(0);
+            }
+        );
+
+        $('#button6').hover(
+            function(){
+                $('#ani3').stop(true).fadeOut(0);
+            }
+        );
+
+        $('#button6').hover(
+            function(){
+                $('#ani4').stop(true).fadeOut(0);
+            }
+        );
+
+        $('#button7').hover(
+            function(){
+                $('#video3').stop(true).fadeIn(300);
+            },
+            function(){
+                $('#video3').stop(true).fadeOut(3000);
+            }
+        );
+
+        $('#button7').hover(
+            function(){
+                $('#play3').stop(true).fadeIn(300);
+            },
+            function(){
+                $('#play3').stop(true).fadeOut(3000);
+            }
+        );
+
+        $('#button7').hover(
+            function(){
+                $('#ani').stop(true).fadeOut(0);
+            }
+        );
+
+        $('#button7').hover(
+            function(){
+                $('#ani2').stop(true).fadeOut(0);
+            }
+        );
+
+        $('#button7').hover(
+            function(){
+                $('#ani4').stop(true).fadeOut(0);
+            }
+        );
+
+        $('#button8').hover(
+            function(){
+                $('#video4').stop(true).fadeIn(300);
+            },
+            function(){
+                $('#video4').stop(true).fadeOut(3000);
+            }
+        );
+
+        $('#button8').hover(
+            function(){
+                $('#play4').stop(true).fadeIn(300);
+            },
+            function(){
+                $('#play4').stop(true).fadeOut(3000);
+            }
+        );
+
+        $('#button8').hover(
+            function(){
+                $('#ani').stop(true).fadeOut(0);
+            }
+        );
+
+        $('#button8').hover(
+            function(){
+                $('#ani2').stop(true).fadeOut(0);
+            }
+        );
+
+        $('#button8').hover(
+            function(){
+                $('#ani3').stop(true).fadeOut(0);
+            }
+        );
+
+        $('#play').click(function(){
+            $('#ani').show();
+        });
+
+        $('#play2').click(function(){
+            $('#ani2').show();
+        });
+
+        $('#play3').click(function(){
+            $('#ani3').show();
+        });
+
+        $('#play4').click(function(){
+            $('#ani4').show();
+        });
+    </script>
+</body>
+</html>

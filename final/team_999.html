@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Project_999</title>
+    <link href="project999.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="none"><p>화면_크기를_키워_주세요_</p>
+        <div id="box">
+            <div id="left_u"></div>
+            <div id="left_d"></div>
+            <div id="right_u"></div>
+            <div id="right_d"></div>
+        </div>
+    </div>
+    <div id="main">
+        <a href="main.html" target="_self">
+            <div id="spider"></div></a>
+        <div id="lbox">
+            <div id="line1"></div>
+            <div id="line2"></div>
+            <div id="line3"></div>
+            <div id="line4"></div>
+        </div>
+        <div class="scroll">
+        <div id="project">
+            <img src="img/team999.png">
+        </div>
+        </div>
+        <div id="menu1">
+            <div id="menuname1">
+                <div class="menuitem1"><p class="menuitem"><a href="menu1.html">OO이_좋아하는_9석_</a></p></div>
+            </div>
+        </div>
+        <div id="menu2">
+            <div id="menuname2">
+                <div class="menuitem2"><p class="menuitem"><a href="menu2.html">꾸의_9석_탐9_생활</a></p></div>
+            </div>
+        </div>
+        <div id="menu3">
+            <div id="menuname3">
+                <div class="menuitem3"><p class="menuitem"><a href="menu3.html">대9_9석_MAP_</a></p></div>
+            </div>
+        </div>
+        <div id="menu4">
+            <div id="menuname4">
+                <p id="menuitem4-1"><a href="menu1.html">OO이_좋아하는_9석_</a></p>
+                <p id="menuitem4-2"><a href="menu2.html">꾸의_9석_탐9_생활</a></p>
+                <p id="menuitem4-3"><a href="menu3.html">대9_9석_MAP_</a></p>
+                <p id="menuitem4-4"><a href="team_999.html">TEAM_999_</a></p>
+            </div>
+        </div>
+    </div>
+
+    <script type=text/javascript src="js/jquery-3.6.1.js"></script>
+    <script type="text/javascript" src="js/anime.min.js"></script>
+    <script>
+         $('#menu1').hover(
+            function(){
+                $('#menuname1').stop(true).fadeIn(200);
+            },
+            function(){
+                $('#menuname1').stop(true).fadeOut(200);
+            }
+        );
+
+        $('#menu2').hover(
+            function(){
+                $('#menuname2').stop(true).fadeIn(200);
+            },
+            function(){
+                $('#menuname2').stop(true).fadeOut(200);
+            }
+        );
+
+        $('#menu3').hover(
+            function(){
+                $('#menuname3').stop(true).fadeIn(200);
+            },
+            function(){
+                $('#menuname3').stop(true).fadeOut(200);
+            }
+        );
+
+        /* jQuery의 delay() 메소드로 애니메이션의 지연 효과를 줌 */
+        $('#menu4').hover(function(){
+            $('#menuitem4-1').stop(true).fadeIn(200);
+            $('#menuitem4-2').stop(true).delay(300).fadeIn(200);
+            $('#menuitem4-3').stop(true).delay(600).fadeIn(200);
+            $('#menuitem4-4').stop(true).delay(900).fadeIn(200);
+        },
+        function(){
+            $('#menuitem4-1').stop(true).fadeOut(200);
+            $('#menuitem4-2').stop(true).fadeOut(200);
+            $('#menuitem4-3').stop(true).fadeOut(200);
+            $('#menuitem4-4').stop(true).fadeOut(200);
+        }
+        );
+    </script>
+</body>
+</html>

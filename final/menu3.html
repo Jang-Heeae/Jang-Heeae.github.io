@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Project_999</title>
+    <link href="project999.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="none"><p>화면_크기를_키워_주세요_</p>
+        <div id="box">
+            <div id="left_u"></div>
+            <div id="left_d"></div>
+            <div id="right_u"></div>
+            <div id="right_d"></div>
+        </div>
+    </div>
+    <div id="main">
+        <a href="main.html" target="_self">
+            <div id="spider"></div></a>
+        <div id="map-frame">
+            <div id="map">
+                <img src='img/daegu.png'>
+                <div id="location"></div>
+                <div id="location2"></div>
+                <div id="location3"></div>
+                <div id="location4"></div>
+                <div id="location5"></div>
+                <div id="location6"></div>
+                <div id="location7"></div>
+                <div id="location8"></div>
+                <div id="location9"></div>
+                <div id="location10"></div>
+                <div id="location11"></div>
+                <div id="location12"></div>
+                <div id="location13"></div>
+                <div id="location14"></div>
+                <div id="location15"></div>
+                <div id="location16"></div>
+                <div id="location17"></div>
+                <div id="location18"></div>
+                <div id="location19"></div>
+                <div id="location20"></div>
+                <div id="location21"></div>
+                <div id="location22"></div>
+                <div id="location23"></div>
+                <div id="location24"></div>
+                <div id="location25"></div>
+                <div id="location26"></div>
+                <div id="location27"></div>
+                <div id="location28"></div>
+                <div id="location29"></div>
+                <div id="location30"></div>
+                <div id="location31"></div>
+                <div id="location32"></div>
+                <div id="location33"></div>
+                <div id="location34"></div>
+                <div id="location35"></div>
+                <div id="location36"></div>
+                <div id="location37"></div>
+                <div id="location38"></div>
+                <div id="location39"></div>
+                <div id="location40"></div>
+                <div id="location41"></div>
+                <div id="location42"></div>
+                <div id="location43"></div>
+                <div id="pic"></div>
+                <div id="pic2"></div>
+                <div id="pic3"></div>
+                <div id="pic4"></div>
+                <div id="pic5"></div>
+                <div id="pic6"></div>
+                <div id="pic7"></div>
+                <div id="pic8"></div>
+                <div id="pic9"></div>
+                <div id="pic10"></div>
+                <div id="pic11"></div>
+                <div id="pic12"></div>
+                <div id="pic13"></div>
+                <div id="pic14"></div>
+                <div id="pic15"></div>
+                <div id="pic16"></div>
+                <div id="pic17"></div>
+                <div id="pic18"></div>
+                <div id="pic19"></div>
+                <div id="pic20"></div>
+                <div id="pic21"></div>
+                <div id="pic22"></div>
+                <div id="pic23"></div>
+                <div id="pic24"></div>
+                <div id="pic25"></div>
+                <div id="pic26"></div>
+                <div id="pic27"></div>
+                <div id="pic28"></div>
+                <div id="pic29"></div>
+                <div id="pic30"></div>
+                <div id="pic31"></div>
+                <div id="pic32"></div>
+                <div id="pic33"></div>
+                <div id="pic34"></div>
+                <div id="pic35"></div>
+                <div id="pic36"></div>
+                <div id="pic37"></div>
+                <div id="pic38"></div>
+                <div id="pic39"></div>
+                <div id="pic40"></div>
+                <div id="pic41"></div>
+                <div id="pic42"></div>
+                <div id="pic43"></div>
+            </div>
+        </div>
+        <div id="lbox">
+            <div id="line1"></div>
+            <div id="line2"></div>
+            <div id="line3"></div>
+            <div id="line4"></div>
+        </div>
+        <div id="menu1">
+            <div id="menuname1">
+                <div class="menuitem1"><p class="menuitem"><a href="menu1.html">OO이_좋아하는_9석_</a></p></div>
+            </div>
+        </div>
+        <div id="menu2">
+            <div id="menuname2">
+                <div class="menuitem2"><p class="menuitem"><a href="menu2.html">꾸의_9석_탐9_생활_</a></p></div>
+            </div>
+        </div>
+        <div id="menu3">
+            <div id="menuname3">
+                <div class="menuitem3"><p class="menuitem"><a href="menu3.html">대9_9석_MAP_</a></p></div>
+            </div>
+        </div>
+        <div id="menu4">
+            <div id="menuname4">
+                <p id="menuitem4-1"><a href="menu1.html">OO이_좋아하는_9석_</a></p>
+                <p id="menuitem4-2"><a href="menu2.html">꾸의_9석_탐9_생활_</a></p>
+                <p id="menuitem4-3"><a href="menu3.html">대9_9석_MAP_</a></p>
+                <p id="menuitem4-4"><a href="team_999.html">TEAM_999_</a></p>
+            </div>
+        </div>
+    </div>
+
+    <script type=text/javascript src="js/jquery-3.6.1.js"></script>
+    <script>
+         $('#menu1').hover(
+            function(){
+                $('#menuname1').stop(true).fadeIn(200);
+            },
+            function(){
+                $('#menuname1').stop(true).fadeOut(200);
+            }
+        );
+
+        $('#menu2').hover(
+            function(){
+                $('#menuname2').stop(true).fadeIn(200);
+            },
+            function(){
+                $('#menuname2').stop(true).fadeOut(200);
+            }
+        );
+
+        $('#menu3').hover(
+            function(){
+                $('#menuname3').stop(true).fadeIn(200);
+            },
+            function(){
+                $('#menuname3').stop(true).fadeOut(200);
+            }
+        );
+
+        /* jQuery의 delay() 메소드로 애니메이션의 지연 효과를 줌 */
+        $('#menu4').hover(function(){
+            $('#menuitem4-1').stop(true).fadeIn(200);
+            $('#menuitem4-2').stop(true).delay(300).fadeIn(200);
+            $('#menuitem4-3').stop(true).delay(600).fadeIn(200);
+            $('#menuitem4-4').stop(true).delay(900).fadeIn(200);
+        },
+        function(){
+            $('#menuitem4-1').stop(true).fadeOut(200);
+            $('#menuitem4-2').stop(true).fadeOut(200);
+            $('#menuitem4-3').stop(true).fadeOut(200);
+            $('#menuitem4-4').stop(true).fadeOut(200);
+        }
+        );
+
+       dragElement(document.getElementById("map"));
+
+       function dragElement(elmnt){
+        var pos1 =0, pos2 = 0, pos3 = 0, pos4 = 0;
+
+        if(document.getElementById(elmnt.id + "map")){
+            document.getElementById(elmnt.id + "map").onmousedown = dragMouseDown;
+        } else {
+            elmnt.onmousedown = dragMouseDown;
+        }
+
+        function dragMouseDown(e){
+            e = e || window.event;
+            e.preventDefault();
+            pos3 = e.clientX;
+            pos4 = e.clientY;
+            document.onmouseup = closeDragElement;
+            document.onmousemove = elementDrag;
+        }
+
+        function elementDrag(e){
+            e = e || window.event;
+            e.preventDefault();
+            pos1 = pos3 - e.clientX;
+            pos2 = pos4 - e.clientY;
+            pos3 = e.clientX;
+            pos4 = e.clientY;
+            elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+            elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+        }
+
+        function closeDragElement(){
+            document.onmouseup = null;
+            document.onmousemove = null;
+        }
+       }
+
+       $('#location').hover(
+            function(){
+                $('#pic').fadeIn(200);
+            },
+            function(){
+                $('#pic').fadeOut(200);
+            }
+        );
+
+        $('#location2').hover(
+            function(){
+                $('#pic2').fadeIn(200);
+            },
+            function(){
+                $('#pic2').fadeOut(200);
+            }
+        );
+
+        $('#location3').hover(
+            function(){
+                $('#pic3').fadeIn(200);
+            },
+            function(){
+                $('#pic3').fadeOut(200);
+            }
+        );
+
+        $('#location4').hover(
+            function(){
+                $('#pic4').fadeIn(200);
+            },
+            function(){
+                $('#pic4').fadeOut(200);
+            }
+        );
+
+        $('#location5').hover(
+            function(){
+                $('#pic5').fadeIn(200);
+            },
+            function(){
+                $('#pic5').fadeOut(200);
+            }
+        );
+
+        $('#location6').hover(
+            function(){
+                $('#pic6').fadeIn(200);
+            },
+            function(){
+                $('#pic6').fadeOut(200);
+            }
+        );
+
+        $('#location7').hover(
+            function(){
+                $('#pic7').fadeIn(200);
+            },
+            function(){
+                $('#pic7').fadeOut(200);
+            }
+        );
+
+        $('#location8').hover(
+            function(){
+                $('#pic8').fadeIn(200);
+            },
+            function(){
+                $('#pic8').fadeOut(200);
+            }
+        );
+
+        $('#location9').hover(
+            function(){
+                $('#pic9').fadeIn(200);
+            },
+            function(){
+                $('#pic9').fadeOut(200);
+            }
+        );
+
+        $('#location10').hover(
+            function(){
+                $('#pic10').fadeIn(200);
+            },
+            function(){
+                $('#pic10').fadeOut(200);
+            }
+        );
+
+        $('#location11').hover(
+            function(){
+                $('#pic11').fadeIn(200);
+            },
+            function(){
+                $('#pic11').fadeOut(200);
+            }
+        );
+
+        $('#location12').hover(
+            function(){
+                $('#pic12').fadeIn(200);
+            },
+            function(){
+                $('#pic12').fadeOut(200);
+            }
+        );
+
+        $('#location13').hover(
+            function(){
+                $('#pic13').fadeIn(200);
+            },
+            function(){
+                $('#pic13').fadeOut(200);
+            }
+        );
+
+        $('#location14').hover(
+            function(){
+                $('#pic14').fadeIn(200);
+            },
+            function(){
+                $('#pic14').fadeOut(200);
+            }
+        );
+
+        $('#location15').hover(
+            function(){
+                $('#pic15').fadeIn(200);
+            },
+            function(){
+                $('#pic15').fadeOut(200);
+            }
+        );
+
+        $('#location16').hover(
+            function(){
+                $('#pic16').fadeIn(200);
+            },
+            function(){
+                $('#pic16').fadeOut(200);
+            }
+        );
+
+        $('#location17').hover(
+            function(){
+                $('#pic17').fadeIn(200);
+            },
+            function(){
+                $('#pic17').fadeOut(200);
+            }
+        );
+
+        $('#location18').hover(
+            function(){
+                $('#pic18').fadeIn(200);
+            },
+            function(){
+                $('#pic18').fadeOut(200);
+            }
+        );
+
+        $('#location19').hover(
+            function(){
+                $('#pic19').fadeIn(200);
+            },
+            function(){
+                $('#pic19').fadeOut(200);
+            }
+        );
+
+        $('#location20').hover(
+            function(){
+                $('#pic20').fadeIn(200);
+            },
+            function(){
+                $('#pic20').fadeOut(200);
+            }
+        );
+
+        $('#location21').hover(
+            function(){
+                $('#pic21').fadeIn(200);
+            },
+            function(){
+                $('#pic21').fadeOut(200);
+            }
+        );
+
+        $('#location22').hover(
+            function(){
+                $('#pic22').fadeIn(200);
+            },
+            function(){
+                $('#pic22').fadeOut(200);
+            }
+        );
+
+        $('#location23').hover(
+            function(){
+                $('#pic23').fadeIn(200);
+            },
+            function(){
+                $('#pic23').fadeOut(200);
+            }
+        );
+
+        $('#location24').hover(
+            function(){
+                $('#pic24').fadeIn(200);
+            },
+            function(){
+                $('#pic24').fadeOut(200);
+            }
+        );
+
+        $('#location25').hover(
+            function(){
+                $('#pic25').fadeIn(200);
+            },
+            function(){
+                $('#pic25').fadeOut(200);
+            }
+        );
+
+        $('#location26').hover(
+            function(){
+                $('#pic26').fadeIn(200);
+            },
+            function(){
+                $('#pic26').fadeOut(200);
+            }
+        );
+
+        $('#location27').hover(
+            function(){
+                $('#pic27').fadeIn(200);
+            },
+            function(){
+                $('#pic27').fadeOut(200);
+            }
+        );
+
+        $('#location28').hover(
+            function(){
+                $('#pic28').fadeIn(200);
+            },
+            function(){
+                $('#pic28').fadeOut(200);
+            }
+        );
+
+        $('#location29').hover(
+            function(){
+                $('#pic29').fadeIn(200);
+            },
+            function(){
+                $('#pic29').fadeOut(200);
+            }
+        );
+
+        $('#location30').hover(
+            function(){
+                $('#pic30').fadeIn(200);
+            },
+            function(){
+                $('#pic30').fadeOut(200);
+            }
+        );
+
+        $('#location31').hover(
+            function(){
+                $('#pic31').fadeIn(200);
+            },
+            function(){
+                $('#pic31').fadeOut(200);
+            }
+        );
+
+        $('#location32').hover(
+            function(){
+                $('#pic32').fadeIn(200);
+            },
+            function(){
+                $('#pic32').fadeOut(200);
+            }
+        );
+
+        $('#location33').hover(
+            function(){
+                $('#pic33').fadeIn(200);
+            },
+            function(){
+                $('#pic33').fadeOut(200);
+            }
+        );
+
+        $('#location34').hover(
+            function(){
+                $('#pic34').fadeIn(200);
+            },
+            function(){
+                $('#pic34').fadeOut(200);
+            }
+        );
+
+        $('#location35').hover(
+            function(){
+                $('#pic35').fadeIn(200);
+            },
+            function(){
+                $('#pic35').fadeOut(200);
+            }
+        );
+
+        $('#location36').hover(
+            function(){
+                $('#pic36').fadeIn(200);
+            },
+            function(){
+                $('#pic36').fadeOut(200);
+            }
+        );
+
+        $('#location37').hover(
+            function(){
+                $('#pic37').fadeIn(200);
+            },
+            function(){
+                $('#pic37').fadeOut(200);
+            }
+        );
+
+        $('#location38').hover(
+            function(){
+                $('#pic38').fadeIn(200);
+            },
+            function(){
+                $('#pic38').fadeOut(200);
+            }
+        );
+
+        $('#location39').hover(
+            function(){
+                $('#pic39').fadeIn(200);
+            },
+            function(){
+                $('#pic39').fadeOut(200);
+            }
+        );
+
+        $('#location40').hover(
+            function(){
+                $('#pic40').fadeIn(200);
+            },
+            function(){
+                $('#pic40').fadeOut(200);
+            }
+        );
+
+        $('#location41').hover(
+            function(){
+                $('#pic41').fadeIn(200);
+            },
+            function(){
+                $('#pic41').fadeOut(200);
+            }
+        );
+
+        $('#location42').hover(
+            function(){
+                $('#pic42').fadeIn(200);
+            },
+            function(){
+                $('#pic42').fadeOut(200);
+            }
+        );
+
+        $('#location43').hover(
+            function(){
+                $('#pic43').fadeIn(200);
+            },
+            function(){
+                $('#pic43').fadeOut(200);
+            }
+        );
+    </script>
+</body>
+</html>

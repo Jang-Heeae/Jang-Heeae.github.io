@@ -1,0 +1,2859 @@
+@font-face {
+    font-family: 'GongGothicMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.0/GongGothicMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@media screen and (max-width: 1000px) {
+    #main {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    #none {
+        display: none;
+    }
+}
+
+html, body {
+    font-family: 'GongGothicMedium', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    cursor: url('img/cursor.png'), auto;
+}
+
+a {
+    cursor: url('img/cursor_hover.png'), pointer;
+}
+
+a:link, a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: black;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+#none {
+    position: absolute;
+    top: 45%;
+    width: 100%;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+#box {
+    position: absolute;
+    top: -50%;
+    width: 100%;
+    height: 200%;
+    background-color: rgba(195, 130, 255, 0);
+}
+
+#left_u {
+    position: absolute;
+    top: 35%;
+    left: 22%;
+    width: 5%;
+    height: 2px;
+    transform: rotate(30deg);
+    background-color: black;
+}
+
+#left_d {
+    position: absolute;
+    top: 62%;
+    left: 22%;
+    width: 5%;
+    height: 2px;
+    transform: rotate(-30deg);
+    background-color: black;
+}
+
+#right_u {
+    position: absolute;
+    top: 35%;
+    left: 73%;
+    width: 5%;
+    height: 2px;
+    transform: rotate(-30deg);
+    background-color: black;
+}
+
+#right_d {
+    position: absolute;
+    top: 62%;
+    left: 73%;
+    width: 5%;
+    height: 2px;
+    transform: rotate(30deg);
+    background-color: black;
+}
+
+#main {
+    background-color: rgba(255, 255, 255, 0);
+    width: 100vw;
+    height: 100vh;
+}
+
+#lbox {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0);
+} 
+
+#line1 {
+    display: block;
+    position: absolute;
+    top: 18%;
+    left: 19%;
+    width: 60%;
+    height: 2px;
+    background-color: black;
+}
+
+#line2 {
+    display: block;
+    position: absolute;
+    top: 75%;
+    left: 19%;
+    width: 60%;
+    height: 2px;
+    background-color: black;
+}
+
+#line3 {
+    display: block;
+    position: absolute;
+    top: 21%;
+    left: 80%;
+    width: 2px;
+    height: 51%;
+    background-color: black;
+}
+
+#line4 {
+    display: block;
+    position: absolute;
+    top: 21%;
+    left: 18%;
+    width: 2px;
+    height: 51%;
+    background-color: black;
+}
+
+#content {
+    display: block;
+    position: absolute;
+    top: 20%;
+    left: 19%;
+    width: 20%;
+    height: 22%;
+    background-image: url('img/mean.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+#content-1 {
+    display: block;
+    position: absolute;
+    top: 71%;
+    left: 68%;
+    width: 11%;
+    height: 2%;
+    background-image: url('img/corners.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+#spider {
+    display: block;
+    position: absolute;
+    top: 14%;
+    left: 14%;
+    width: 3%;
+    height: 6%;
+    background-color: rgba(255, 30, 30, 0);
+    background-image: url('img/spider.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#menu1 {
+    display: block;
+    position: absolute;
+    top: 11%;
+    left: 80%;
+    width: 15%;
+    height: 20px;
+    background-color: rgba(255, 64, 64, 0);
+    border-top: solid 2px #000;
+    transform: rotate(-30deg);
+}
+
+#menu2 {
+    display: block;
+    position: absolute;
+    top: 80%;
+    left: 80%;
+    width: 15%;
+    height: 20px;
+    background-color: rgba(255, 64, 64, 0);
+    border-bottom: solid 2px #000;
+    transform: rotate(30deg);
+}
+
+#menu3 {
+    display: block;
+    position: absolute;
+    top: 80%;
+    left: 3%;
+    width: 15%;
+    height: 20px;
+    background-color: rgba(255, 64, 64, 0);
+    border-bottom: solid 2px #000;
+    transform: rotate(-30deg);
+}
+
+#menu4 {
+    display: block;
+    position: absolute;
+    top: 11%;
+    left: 3%;
+    width: 15%;
+    height: 20px;
+    background-color: rgba(255, 64, 64, 0);
+    border-top: solid 2px #000;
+    transform: rotate(30deg);
+}
+
+#menuname1 {
+    display: none;
+    position: relative;
+    top: 5%;
+    left: 5%;
+    font-size: 1.2rem;
+}
+
+#menuname2{
+    display: none;
+    position: relative;
+    top: -200%;
+    left: 5%;
+    font-size: 1.2rem;
+}
+
+#menuname3 {
+    display: none;
+    position: relative;
+    top: -200%;
+    left: -5%;
+    font-size: 1.2rem;
+    text-align: right;
+}
+
+#menuname4 {
+    display: block;
+    position: relative;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 1000%;
+    background-color: rgba(0, 255, 255, 0);
+}
+
+#menuitem4-1 {
+    display: none;
+    position: relative;
+    top: 20%;
+    left: -18%;
+    font-size: 1.2rem;
+    text-align: right;
+}
+
+#menuitem4-2 {
+    display: none;
+    position: relative;
+    top: 40%;
+    left: 0%;
+    font-size: 1.2rem;
+    text-align: right;
+}
+
+#menuitem4-3 {
+    display: none;
+    position: relative;
+    top: 60%;
+    left: 17%;
+    font-size: 1.2rem;
+    text-align: right;
+}
+
+#menuitem4-4 {
+    display: none;
+    position: relative;
+    top: 80%;
+    left: 35%;
+    font-size: 1.2rem;
+    text-align: right;
+}
+
+.menuitem > a {
+    text-decoration: none;
+    color: black;
+}
+
+.menuitem > a:hover {
+    text-decoration: underline;
+    color: black;
+    font-weight: bold;
+}
+
+#menuname4 > a {
+    text-decoration: none;
+    color: black;
+}
+
+#menuname4 > a:hover {
+    text-decoration: underline;
+    color: black;
+    font-weight: bold;
+}
+
+#content2 {
+    position: absolute;
+    top: 45%;
+    left: 35%;
+    width: 30%;
+    color: black;
+    text-align: center;
+    font-size: 0.7rem;
+    background-color: rgba(0, 255, 255, 0);
+}
+
+#gallery_ani {
+    display: none;
+    position: absolute;
+    margin: auto;
+    top: 19%;
+    left: 19%;
+    height: 55%;
+    width: 60%;
+    background-color: rgb(255, 255, 255);
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 5%;
+    position: fixed;
+    margin: auto;
+    top: 21%;
+    left: 24%;
+    height: 52%;
+    width: 50%;
+    overflow: auto;
+}
+
+.gallery::-webkit-scrollbar {
+    width: 10px;
+}
+
+.gallery::-webkit-scrollbar-thumb {
+    height: 5%;
+    background: black;
+}
+
+.gallery::-webkit-scrollbar-track {
+    background: none;
+}
+
+#picture {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    background-color: blue;
+    height: 30%;
+    width: 30%;
+    overflow: visible;
+}
+
+.picture img {
+    width: 100%;
+    height: 100%;
+    cursor: url('img/cursor_hover.png'), auto;
+}
+
+.picture:hover {
+    cursor: url('img/cursor_hover.png'), auto;
+}
+
+#content_name {
+    display: block;
+    position: relative;
+    top: 5%;
+    left: 0%;
+    width: 100%;
+    height: 2%;
+    font-size: 1.2rem;
+}
+
+#hint {
+    display: block;
+    position: absolute;
+    top: 45%;
+    left: 6.5%;
+    width: 20%;
+    height: 5%;
+    background-color: rgba(127, 255, 212, 0);
+    background-image: url('img/ant.png');
+    background-size: cover;
+    transform: rotate(-90deg);
+}
+
+#hint2 {
+    display: block;
+    position: absolute;
+    top: 75.5%;
+    left: 17%;
+    width: 58%;
+    height: 3%;
+    background-color: rgba(127, 255, 212, 0);
+}
+
+#hint2 > img {
+    display: block;
+    width: 100%;
+}
+
+#hint3 {
+    display: block;
+    position: absolute;
+    top: 45%;
+    left: 6.5%;
+    width: 19%;
+    height: 5%;
+    background-color: rgba(127, 255, 212, 0);
+    background-image: url('img/hintspider.png');
+    background-size: cover;
+    transform: rotate(-90deg);
+}
+
+#hint4 {
+    display: block;
+    position: absolute;
+    top: 75.5%;
+    left: 17%;
+    width: 58.5%;
+    height: 3%;
+    background-color: rgba(127, 255, 212, 0);
+}
+
+#hint4 > img {
+    display: block;
+    width: 100%;
+}
+
+#hint5 {
+    display: block;
+    position: absolute;
+    top: 65%;
+    left: 20%;
+    width: 4%;
+    height: 10%;
+    background-color: rgba(127, 255, 212, 0);
+    background-image: url('img/worm.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#hidden_box {
+    display: block;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(240, 255, 255, 0);
+}
+
+#hidden {
+    display: block;
+    position: absolute;
+    top: 75.5%;
+    left: 9%;
+    width: 6%;
+    height: 6%;
+    background-color: rgba(186, 47, 47, 0);
+    color: white;
+    background-image: url('img/corner.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: url('img/cursor_hover.png'),pointer;
+}
+
+#hidden2 {
+    display: block;
+    position: absolute;
+    top: 72%;
+    left: 12%;
+    width: 6%;
+    height: 6%;
+    background-color: rgba(186, 47, 47, 0);
+    color: white;
+    background-image: url('img/corner.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: url('img/cursor_hover.png'),pointer;
+}
+
+#hidden3 {
+    display: block;
+    position: absolute;
+    top: 74%;
+    left: 11%;
+    width: 6%;
+    height: 6%;
+    background-color: rgba(186, 47, 47, 0);
+    color: white;
+    background-image: url('img/corner.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: url('img/cursor_hover.png'),pointer;
+}
+
+#hidden4 {
+    display: block;
+    position: absolute;
+    top: 77%;
+    left: 7%;
+    width: 6%;
+    height: 6%;
+    background-color: rgba(186, 47, 47, 0);
+    color: white;
+    background-image: url('img/corner.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: url('img/cursor_hover.png'),pointer;
+}
+
+#hidden5 {
+    display: block;
+    position: absolute;
+    top: 78.5%;
+    left: 6%;
+    width: 6%;
+    height: 6%;
+    background-color: rgba(186, 47, 47, 0);
+    color: white;
+    background-image: url('img/corner.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: url('img/cursor_hover.png'),pointer;
+}
+
+#hidden6 {
+    display: block;
+    position: absolute;
+    top: 69%;
+    left: 14%;
+    width: 6%;
+    height: 6%;
+    background-color: rgba(186, 47, 47, 0);
+    color: white;
+    background-image: url('img/corner.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: url('img/cursor_hover.png'),pointer;
+}
+
+#content3 {
+    display: block;
+    position: absolute;
+    top: 76%;
+    left: 7%;
+    font-size: 0.7rem;
+    color: rgb(0, 0, 0);
+    transform: rotate(-30deg);
+}
+
+#button1 {
+    display: block;
+    position: absolute;
+    top: 18%;
+    left: 17%;
+    width: 32px;
+    height: 28px;
+    padding: 0%;
+    margin: 0%;
+    background-color: rgba(255, 0, 0, 0);
+    cursor: url('img/cursor_corner.png'), pointer;
+}
+
+#button2 {
+    display: block;
+    position: absolute;
+    top: 72%;
+    left: 17%;
+    width: 32px;
+    height: 28px;
+    padding: 0%;
+    margin: 0%;
+    background-color: rgba(187, 255, 0, 0);
+    cursor: url('img/cursor_corner.png'), pointer;
+}
+
+#button3 {
+    display: block;
+    position: absolute;
+    top: 72%;
+    left: 79%;
+    width: 32px;
+    height: 28px;
+    padding: 0%;
+    margin: 0%;
+    background-color: rgba(0, 68, 255, 0);
+    cursor: url('img/cursor_corner.png'), pointer;
+}
+
+#button4 {
+    display: block;
+    position: absolute;
+    top: 18%;
+    left: 79%;
+    width: 32px;
+    height: 28px;
+    padding: 0%;
+    margin: 0%;
+    background-color: rgba(255, 0, 208, 0);
+    cursor: url('img/cursor_corner.png'), pointer;
+    
+}
+
+#target {
+    display: none;
+    position: absolute;
+    top: 19%;
+    left: 24%;
+    width: 50%;
+    height: 55%;
+    background-color: rgb(255, 255, 255);
+}
+
+#target > img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+#target2 {
+    display: none;
+    position: absolute;
+    top: 19%;
+    left: 24%;
+    width: 50%;
+    height: 55%;
+    background-color: rgb(225, 225, 225);
+}
+
+#target2 > img {
+    display: block;
+    width:100%;
+    height: 100%;
+}
+
+#target3 {
+    display: none;
+    position: absolute;
+    top: 19%;
+    left: 24%;
+    width: 50%;
+    height: 55%;
+    background-color: rgb(225, 225, 225);
+}
+
+#target3 > img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+#target4 {
+    display: none;
+    position: absolute;
+    top: 19%;
+    left: 24%;
+    width: 50%;
+    height: 55%;
+    background-color: rgb(225, 225, 225);
+}
+
+#target4 > img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+#bat_story {
+    display: none;
+    position: absolute;
+    top: 45%;
+    left: 58%;
+    width: 14%;
+    height: 5%;
+    background-color: rgba(255, 37, 37, 0);
+    font-size: 1.3rem;
+    color: white;
+    transform: rotate(30deg);
+}
+
+#bat_story2 {
+    display: none;
+    position: absolute;
+    top: 45%;
+    left: 48%;
+    width: 14%;
+    height: 5%;
+    background-color: rgba(255, 37, 37, 0);
+    font-size: 1.3rem;
+    color: white;
+    transform: rotate(87deg);
+}
+
+#bat_story3 {
+    display: none;
+    position: absolute;
+    top: 54%;
+    left: 25.5%;
+    width: 16%;
+    height: 5%;
+    background-color: rgba(255, 37, 37, 0);
+    font-size: 1.3rem;
+    color: white;
+    transform: rotate(18deg);
+
+}
+
+#bat_story4 {
+    display: none;
+    position: absolute;
+    top: 26%;
+    left: 45%;
+    width: 14%;
+    height: 5%;
+    background-color: rgba(255, 37, 37, 0);
+    font-size: 1.3rem;
+    transform: rotate(-8deg);
+}
+
+#bike_story {
+    display: none;
+    position: absolute;
+    top: 62%;
+    left: 42%;
+    width: 14%;
+    height: 5%;
+    background-color: rgba(255, 37, 37, 0);
+    font-size: 1.3rem;
+    color: white;
+}
+
+#bike_story2 {
+    display: none;
+    position: absolute;
+    top: 60%;
+    left: 46%;
+    width: 17%;
+    height: 5%;
+    background-color: rgba(255, 37, 37, 0);
+    font-size: 1.3rem;
+    color: white;
+    transform: rotate(-20deg);
+}
+
+#bike_story3 {
+    display: none;
+    position: absolute;
+    top: 29.5%;
+    left: 59%;
+    width: 13%;
+    height: 5%;
+    background-color: rgba(255, 37, 37, 0);
+    font-size: 1.3rem;
+    transform: rotate(93deg);
+}
+
+#bike_story4 {
+    display: none;
+    position: absolute;
+    top: 29%;
+    left: 42%;
+    width: 14%;
+    height: 5%;
+    background-color: rgba(255, 37, 37, 0);
+    font-size: 1.3rem;
+    transform: rotate(7deg);
+}
+
+#cat_story {
+    display: none;
+    position: absolute;
+    top: 30%;
+    left: 18%;
+    background-color: rgba(255, 35, 35, 0);
+    font-size: 1.3rem;
+    color: rgb(255, 255, 255);
+    transform: rotate(90deg);
+}
+
+#cat_story2 {
+    display: none;
+    position: absolute;
+    top: 32.5%;
+    left: 38.5%;
+    width: 14%;
+    height: 5%;
+    background-color: rgba(255, 40, 40, 0);
+    font-size: 1.3rem;
+    transform: rotate(-35deg);
+}
+
+#cat_story3 {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 51%;
+    width: 14%;
+    height: 5%;
+    background-color: rgba(255, 37, 37, 0);
+    font-size: 1.3rem;
+}
+
+#cat_story4 {
+    display: none;
+    position: absolute;
+    top: 33%;
+    left: 45%;
+    width: 16%;
+    height: 5%;
+    background-color: rgba(255, 37, 37, 0);
+    font-size: 1.3rem;
+    transform: rotate(35deg);
+}
+
+#dog_story {
+    display: none;
+    position: absolute;
+    top: 44%;
+    left: 55%;
+    width: 13%;
+    height: 5%;
+    background-color: rgba(255, 37, 37, 0);
+    font-size: 1.3rem;
+    transform: rotate(24deg);
+    color: white;
+}
+
+#dog_story2 {
+    display: none;
+    position: absolute;
+    top: 46%;
+    left: 60%;
+    width: 15%;
+    height: 5%;
+    background-color: rgba(255, 37, 37, 0);
+    font-size: 1.3rem;
+    transform: rotate(33deg);
+    color: white;
+}
+
+#dog_story3 {
+    display: none;
+    position: absolute;
+    top: 59%;
+    left: 30%;;
+    width: 13%;
+    height: 5%;
+    background-color: rgba(255, 37, 37, 0);
+    font-size: 1.3rem;
+    transform: rotate(-51deg);
+    color: white;
+}
+
+#dog_story4 {
+    display: none;
+    position: absolute;
+    top: 37%;
+    left: 41%;
+    width: 12%;
+    height: 5%;
+    background-color: rgba(255, 37, 37, 0);
+    font-size: 1.3rem;
+    transform: rotate(81deg);
+    color: white;
+}
+
+#fire_story {
+    display: none;
+    position: absolute;
+    top: 63%;
+    left: 27%;
+    width: 17%;
+    height: 5%;
+    background-color: rgba(255, 37, 37, 0);
+    font-size: 1.3rem;
+    color: white;
+    transform: rotate(23deg);
+}
+
+#fire_story2 {
+    display: none;
+    position: absolute;
+    top: 42%;
+    left: 47.5%;
+    width: 17%;
+    height: 5%;
+    background-color: rgba(255, 37, 37, 0);
+    font-size: 1.3rem;
+    color: white;
+    transform: rotate(92deg);
+}
+
+#fire_story3 {
+    display: none;
+    position: absolute;
+    top: 49.5%;
+    left: 43.5%;
+    width: 18%;
+    height: 5%;
+    background-color: rgba(255, 37, 37, 0);
+    font-size: 1.3rem;
+    color: white;
+    transform: rotate(90deg);
+}
+
+#fire_story4 {
+    display: none;
+    position: absolute;
+    top: 69%;
+    left: 35%;
+    width: 15%;
+    height: 5%;
+    background-color: rgba(255, 37, 37, 0);
+    font-size: 1.3rem;
+    color: white;
+}
+
+#ham_story {
+    display: none;
+    position: absolute;
+    top: 69%;
+    left: 60%;
+    width: 14%;
+    height: 5%;
+    background-color: rgba(255, 37, 37, 0);
+    font-size: 1.3rem;
+}
+
+#ham_story2 {
+    display: none;
+    position: absolute;
+    top: 58%;
+    left: 56%;
+    width: 16%;
+    height: 5%;
+    background-color: rgba(255, 37, 37, 0);
+    font-size: 1.3rem;
+    color: white;
+    transform: rotate(-45deg);
+}
+
+#ham_story3 {
+    display: none;
+    position: absolute;
+    top: 68.5%;
+    left: 59.5%;
+    width: 15%;
+    height: 5%;
+    background-color: rgba(255, 37, 37, 0);
+    font-size: 1.3rem;
+    color: white;
+}
+
+#ham_story4 {
+    display: none;
+    position: absolute;
+    top: 47%;
+    left: 58%;
+    width: 14%;
+    height: 5%;
+    background-color: rgba(255, 37, 37, 0);
+    font-size: 1.3rem;
+    color: white;
+    transform: rotate(60deg);
+}
+
+#jang_story {
+    display: none;
+    position: absolute;
+    top: 35%;
+    left: 44%;
+    width: 13%;
+    height: 5%;
+    background-color: rgba(255, 37, 37, 0);
+    font-size: 1.3rem;
+    color: white;
+    transform: rotate(90deg);
+}
+
+#jang_story2 {
+    display: none;
+    position: absolute;
+    top: 48.5%;
+    left: 48.5%;
+    width: 16%;
+    height: 5%;
+    background-color: rgba(255, 37, 37, 0);
+    font-size: 1.3rem;
+    color: white;
+    transform: rotate(12deg);
+}
+
+#jang_story3 {
+    display: none;
+    position: absolute;
+    top: 58.5%;
+    left: 41%;
+    width: 18%;
+    height: 5%;
+    background-color: rgba(255, 37, 37, 0);
+    font-size: 1.3rem;
+    transform: rotate(-6deg);
+}
+
+#jang_story4 {
+    display: none;
+    position: absolute;
+    top: 34%;
+    left: 24.5%;
+    width: 14%;
+    height: 5%;
+    background-color: rgba(255, 37, 37, 0);
+    font-size: 1.3rem;
+    color: white;
+    transform: rotate(-4.5deg);
+}
+
+#kim_story {
+    display: none;
+    position: absolute;
+    top: 36%;
+    left: 52%;
+    width: 14%;
+    height: 5%;
+    background-color: rgba(255, 37, 37, 0);
+    font-size: 1.3rem;
+    color: white;
+    transform: rotate(16deg);
+}
+
+#kim_story2 {
+    display: none;
+    position: absolute;
+    top: 40%;
+    left: 46.5%;
+    width: 19%;
+    height: 5%;
+    background-color: rgba(255, 37, 37, 0);
+    font-size: 1.3rem;
+    transform: rotate(91deg);
+}
+
+#kim_story3 {
+    display: none;
+    position: absolute;
+    top: 63%;
+    left: 24%;
+    width: 14%;
+    height: 5%;
+    background-color: rgba(255, 37, 37, 0);
+    font-size: 1.3rem;
+    color: white;
+    transform: rotate(-21deg);
+}
+
+#kim_story4 {
+    display: none;
+    position: absolute;
+    top: 33%;
+    left: 29%;
+    width: 16%;
+    height: 5%;
+    background-color: rgba(255, 37, 37, 0);
+    font-size: 1.3rem;
+    color: white;
+    transform: rotate(90deg);
+}
+
+#moss_story {
+    display: none;
+    position: absolute;
+    top: 30%;
+    left: 38%;
+    width: 14%;
+    height: 5%;
+    background-color: rgba(255, 37, 37, 0);
+    font-size: 1.3rem;
+    transform: rotate(-33deg);
+}
+
+#moss_story2 {
+    display: none;
+    position: absolute;
+    top: 36%;
+    left: 36.5%;
+    width: 18%;
+    height: 5%;
+    background-color: rgba(255, 37, 37, 0);
+    font-size: 1.3rem;
+    transform: rotate(7deg);
+    color: white;
+}
+
+#moss_story3 {
+    display: none;
+    position: absolute;
+    top: 68%;
+    left: 24.5%;
+    width: 18%;
+    height: 5%;
+    background-color: rgba(255, 37, 37, 0);
+    font-size: 1.3rem;
+    color: white;
+}
+
+#moss_story4 {
+    display: none;
+    position: absolute;
+    top: 48%;
+    left: 49%;
+    width: 17%;
+    height: 5%;
+    background-color: rgba(255, 37, 37, 0);
+    font-size: 1.3rem;
+    transform: rotate(-50deg);
+}
+
+#oh_story {
+    display: none;
+    position: absolute;
+    top: 21%;
+    left: 54%;
+    width: 14%;
+    height: 5%;
+    background-color: rgba(255, 37, 37, 0);
+    font-size: 1.3rem;
+    color: white;
+    transform: rotate(15deg);
+}
+
+#oh_story2 {
+    display: none;
+    position: absolute;
+    top: 33%;
+    left: 24.5%;
+    width: 14%;
+    height: 5%;
+    background-color: rgba(255, 37, 37, 0);
+    font-size: 1.3rem;
+    color: white;
+    transform: rotate(6.5deg);
+}
+
+#oh_story3 {
+    display: none;
+    position: absolute;
+    top: 55.5%;
+    left: 52%;
+    width: 15%;
+    height: 5%;
+    background-color: rgba(255, 37, 37, 0);
+    font-size: 1.3rem;
+    color: white;
+    transform: rotate(18deg);
+}
+
+#oh_story4 {
+    display: none;
+    position: absolute;
+    top: 33%;
+    left: 32%;
+    width: 14%;
+    height: 5%;
+    background-color: rgba(255, 37, 37, 0);
+    font-size: 1.3rem;
+    color: white;
+    transform: rotate(89deg);
+}
+
+#park_story {
+    display: none;
+    position: absolute;
+    top: 60%;
+    left: 35%;
+    width: 18%;
+    height: 5%;
+    background-color: rgba(255, 37, 37, 0);
+    font-size: 1.3rem;
+    color: white;
+    transform: rotate(5deg);
+}
+
+#park_story2 {
+    display: none;
+    position: absolute;
+    top: 64.5%;
+    left: 24.5%;
+    width: 17%;
+    height: 5%;
+    background-color: rgba(255, 37, 37, 0);
+    font-size: 1.3rem;
+    color: white;
+    transform: rotate(2deg);
+}
+
+#park_story3 {
+    display: none;
+    position: absolute;
+    top: 25%;
+    left: 36%;
+    width: 14%;
+    height: 5%;
+    background-color: rgba(255, 37, 37, 0);
+    font-size: 1.3rem;
+    color: white;
+    transform: rotate(-1deg);
+}
+
+#park_story4 {
+    display: none;
+    position: absolute;
+    top: 68.5%;
+    left: 24.5%;
+    width: 17%;
+    height: 5%;
+    background-color: rgba(255, 37, 37, 0);
+    font-size: 1.3rem;
+    color: white;
+}
+
+#hong_story {
+    display: none;
+    position: absolute;
+    top: 42%;
+    left: 33%;
+    width: 14%;
+    height: 5%;
+    background-color: rgba(255, 37, 37, 0);
+    font-size: 1.3rem;
+    transform: rotate(-21deg);
+}
+
+#hong_story2 {
+    display: none;
+    position: absolute;
+    top: 52%;
+    left: 50%;
+    width: 14%;
+    height: 5%;
+    background-color: rgba(255, 37, 37, 0);
+    font-size: 1.3rem;
+    color: white;
+    transform: rotate(29deg);
+}
+
+#hong_story3 {
+    display: none;
+    position: absolute;
+    top: 47%;
+    left: 46%;
+    width: 16%;
+    height: 5%;
+    background-color: rgba(255, 37, 37, 0);
+    font-size: 1.3rem;
+}
+
+#hong_story4 {
+    display: none;
+    position: absolute;
+    top: 41%;
+    left: 53%;
+    width: 12%;
+    height: 5%;
+    background-color: rgba(255, 37, 37, 0);
+    font-size: 1.3rem;
+    color: white;
+    transform: rotate(20deg);
+}
+
+#tv {
+    display: block;
+    position: absolute;
+    top: 3%;
+    left: 37%;
+    width: 25%;
+    height: 15%;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+#antenna1 {
+    display: block;
+    position: relative;
+    top: 53%;
+    left: 10%;
+    width: 40%;
+    height: 2px;
+    transform: rotate(45deg);
+    background-color: black;
+}
+
+#antenna2 {
+    display: block;
+    position: relative;
+    top: 52%;
+    left: 50%;
+    width: 40%;
+    height: 2px;
+    transform: rotate(-45deg);
+    background-color: black;
+}
+
+#tv_frame {
+    display: block;
+    position: absolute;
+    top: 18%;
+    left: 18%;
+    width: 62%;
+    height: 57%;
+    background-color: rgba(255, 75, 75, 0);
+}
+
+#frame1 {
+    display: block;
+    position: absolute;
+    top: 10%;
+    left: 15%;
+    width: 70%;
+    height: 2px;
+    background-color: black;
+}
+
+#frame2 {
+    display: block;
+    position: absolute;
+    top: 90%;
+    left: 15%;
+    width: 70%;
+    height: 2px;
+    background-color: black;
+}
+
+#frame3 {
+    display: block;
+    position: absolute;
+    top: 10%;
+    left: 15%;
+    width: 2px;
+    height: 80%;
+    background-color: black;
+}
+
+#frame4 {
+    display: block;
+    position: absolute;
+    top: 10%;
+    left: 85%;
+    width: 2px;
+    height: 80%;
+    background-color: black;
+}
+
+#dial {
+    display: block;
+    position: absolute;
+    top: 15%;
+    left: 89%;
+    width: 7%;
+    height: 15%;
+    background-color: rgba(165, 42, 42, 0);
+}
+
+#dial > img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+#dial2 {
+    display: block;
+    position: absolute;
+    top: 35%;
+    left: 89%;
+    width: 7%;
+    height: 15%;
+    background-color: rgba(165, 42, 42, 0);
+}
+
+#dial2 > img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+#button5 {
+    display: block;
+    position: absolute;
+    top: 18%;
+    left: 17%;
+    width: 33px;
+    height: 27px;
+    padding: 0%;
+    margin: 0%;
+    background-color: rgba(255, 40, 40, 0);
+    background-image: url('img/simbol.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 20%;
+    cursor: url('img/cursor_corner.png'), pointer;
+}
+
+#button6 {
+    display: block;
+    position: absolute;
+    top: 18%;
+    left: 79%;
+    width: 32px;
+    height: 28px;
+    padding: 0%;
+    margin: 0%;
+    background-color: rgba(173, 31, 255, 0);
+    background-image: url('img/simbol.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 20%;
+    cursor: url('img/cursor_corner.png'), pointer;
+}
+
+#button7 {
+    display: block;
+    position: absolute;
+    top: 72%;
+    left: 17%;
+    width: 32px;
+    height: 28px;
+    padding: 0%;
+    margin: 0%;
+    background-color: rgba(20, 255, 3, 0);
+    background-image: url('img/simbol.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 20%;
+    cursor: url('img/cursor_corner.png'), pointer;
+}
+
+#button8 {
+    display: block;
+    position: absolute;
+    top: 72%;
+    left: 79%;
+    width: 32px;
+    height: 28px;
+    padding: 0%;
+    margin: 0%;
+    background-color: rgba(246, 255, 0, 0);
+    background-image: url('img/simbol.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 20%;
+    cursor: url('img/cursor_corner.png'), pointer;
+    
+}
+
+#play {
+    display: none;
+    position: absolute;
+    top: 42%;
+    left: 47%;
+    width: 6%;
+    height: 12%;
+    background-color: rgba(0, 255, 255, 0);
+    background-image: url('img/play.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#play2 {
+    display: none;
+    position: absolute;
+    top: 42%;
+    left: 47%;
+    width: 6%;
+    height: 12%;
+    background-color: rgba(0, 255, 255, 0);
+    background-image: url('img/play.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#play3 {
+    display: none;
+    position: absolute;
+    top: 42%;
+    left: 47%;
+    width: 6%;
+    height: 12%;
+    background-color: rgba(0, 255, 255, 0);
+    background-image: url('img/play.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#play4 {
+    display: none;
+    position: absolute;
+    top: 42%;
+    left: 47%;
+    width: 6%;
+    height: 12%;
+    background-color: rgba(0, 255, 255, 0);
+    background-image: url('img/play.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#video {
+    display: none;
+    position: absolute;
+    top: 30%;
+    left: 36%;
+    width: 53%;
+    height: 33%;
+    background-image: url('img/thumbnail1.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#video2 {
+    display: none;
+    position: absolute;
+    top: 30%;
+    left: 36%;
+    width: 53%;
+    height: 33%;
+    background-image: url('img/thumbnail2.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#video3 {
+    display: none;
+    position: absolute;
+    top: 30%;
+    left: 36%;
+    width: 53%;
+    height: 33%;
+    background-image: url('img/thumbnail3.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#video4 {
+    display: none;
+    position: absolute;
+    top: 30%;
+    left: 36%;
+    width: 53%;
+    height: 33%;
+    background-image: url('img/thumbnail4.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#ani {
+    display: none;
+    position: absolute;
+    top: 24.5%;
+    left: 29%;
+    width: 40%;
+    height: 44%;
+    background-color: rgba(0, 255, 255, 0);
+}
+
+#ani2 {
+    display: none;
+    position: absolute;
+    top: 24.5%;
+    left: 29%;
+    width: 40%;
+    height: 44%;
+    background-color: rgba(0, 255, 255, 0);
+}
+
+#ani3 {
+    display: none;
+    position: absolute;
+    top: 24.5%;
+    left: 29%;
+    width: 40%;
+    height: 44%;
+    background-color: rgba(0, 255, 255, 0);
+}
+
+#ani4 {
+    display: none;
+    position: absolute;
+    top: 24.5%;
+    left: 29%;
+    width: 40%;
+    height: 44%;
+    background-color: rgba(0, 255, 255, 0);
+}
+
+#map-frame {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    top: 18%;
+    left: 18%;
+    width: 62%;
+    height: 57%;
+    overflow: hidden;
+}
+
+#map {
+    display: block;
+    position: absolute;
+    width: 70%;
+    height: 90%;
+    cursor: move;
+    z-index: 9;
+    background-color: rgba(0, 255, 255, 0);
+}
+
+#map > img {
+    display: block;
+    width: 100%;
+    float: left;
+}
+
+#location {
+    display: block;
+    position: absolute;
+    width: 8%;
+    height: 8%;
+    top: 90%;
+    left: 30%;
+    background-color: rgba(0, 255, 255, 0);
+    background-image: url('img/simbol.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: url('img/cursor_hover.png') ,pointer;
+}
+
+#pic {
+    display: none;
+    position: absolute;
+    width: 32%;
+    height: 65%;
+    top: 30%;
+    left: 0%;
+    background-color: rgba(255, 228, 196, 0);
+    background-image: url('img/dcorner.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#location2 {
+    display: block;
+    position: absolute;
+    width: 12%;
+    height: 12%;
+    top: 20%;
+    left: 50%;
+    background-color: rgba(0, 255, 255, 0);
+    background-image: url('img/simbol.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: url('img/cursor_hover.png') ,pointer;
+}
+
+#pic2 {
+    display: none;
+    position: absolute;
+    width: 32%;
+    height: 65%;
+    top: 10%;
+    left: 20%;
+    background-color: rgba(255, 228, 196, 0);
+    background-image: url('img/dcorner2.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#location3 {
+    display: block;
+    position: absolute;
+    width: 12%;
+    height: 12%;
+    top: 80%;
+    left: 85%;
+    background-color: rgba(0, 255, 255, 0);
+    background-image: url('img/simbol.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: url('img/cursor_hover.png') ,pointer;
+}
+
+#pic3 {
+    display: none;
+    position: absolute;
+    width: 32%;
+    height: 65%;
+    top: 23%;
+    left: 55%;
+    background-color: rgba(255, 228, 196, 0);
+    background-image: url('img/dcorner3.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#location4 {
+    display: block;
+    position: absolute;
+    width: 9%;
+    height: 9%;
+    top: 36%;
+    left: 24%;
+    background-color: rgba(0, 255, 255, 0);
+    background-image: url('img/simbol.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: url('img/cursor_hover.png') ,pointer;
+}
+
+#pic4 {
+    display: none;
+    position: absolute;
+    width: 32%;
+    height: 65%;
+    top: 0%;
+    left: -6%;
+    background-color: rgba(255, 228, 196, 0);
+    background-image: url('img/dcorner4.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#location5 {
+    display: block;
+    position: absolute;
+    width: 8%;
+    height: 8%;
+    top: 150%;
+    left: 20%;
+    background-color: rgba(0, 255, 255, 0);
+    background-image: url('img/simbol.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: url('img/커서_호버.png') ,pointer;
+}
+
+#pic5 {
+    display: none;
+    position: absolute;
+    width: 32%;
+    height: 65%;
+    top: 120%;
+    left: -10%;
+    background-color: rgba(255, 228, 196, 0);
+    background-image: url('img/dcorner5.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#location6 {
+    display: block;
+    position: absolute;
+    width: 14%;
+    height: 14%;
+    top: 150%;
+    left: 40%;
+    background-color: rgba(0, 255, 255, 0);
+    background-image: url('img/simbol2.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: url('img/cursor_hover.png') ,pointer;
+}
+
+#pic6 {
+    display: none;
+    position: absolute;
+    width: 32%;
+    height: 65%;
+    top: 120%;
+    left: 49%;
+    background-color: rgba(255, 228, 196, 0);
+    background-image: url('img/dcorner6.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#location7 {
+    display: block;
+    position: absolute;
+    width: 12%;
+    height: 12%;
+    top: 30%;
+    left: 90%;
+    background-color: rgba(0, 255, 255, 0);
+    background-image: url('img/simbol2.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: url('img/cursor_hover.png') ,pointer;
+}
+
+#pic7 {
+    display: none;
+    position: absolute;
+    width: 32%;
+    height: 65%;
+    top: -20%;
+    left: 60%;
+    background-color: rgba(255, 228, 196, 0);
+    background-image: url('img/dcorner7.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#location8 {
+    display: block;
+    position: absolute;
+    width: 8%;
+    height: 8%;
+    top: 137%;
+    left: 57%;
+    background-color: rgba(0, 255, 255, 0);
+    background-image: url('img/simbol2.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: url('img/cursor_hover.png') ,pointer;
+}
+
+#pic8 {
+    display: none;
+    position: absolute;
+    width: 32%;
+    height: 65%;
+    top: 120%;
+    left: 63%;
+    background-color: rgba(255, 228, 196, 0);
+    background-image: url('img/dcorner8.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#location9 {
+    display: block;
+    position: absolute;
+    width: 11%;
+    height: 11%;
+    top: 0%;
+    left: 70%;
+    background-color: rgba(0, 255, 255, 0);
+    background-image: url('img/simbol.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: url('img/cursor_hover.png') ,pointer;
+}
+
+#pic9 {
+    display: none;
+    position: absolute;
+    width: 65%;
+    height: 32%;
+    top: -10%;
+    left: 75%;
+    background-color: rgba(255, 228, 196, 0);
+    background-image: url('img/dcorner9.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#location10 {
+    display: block;
+    position: absolute;
+    width: 11%;
+    height: 11%;
+    top: 110%;
+    left: 13%;
+    background-color: rgba(0, 255, 255, 0);
+    background-image: url('img/simbol.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: url('img/cursor_hover.png') ,pointer;
+}
+
+#pic10 {
+    display: none;
+    position: absolute;
+    width: 65%;
+    height: 32%;
+    top: 113%;
+    left: 20%;
+    background-color: rgba(255, 228, 196, 0);
+    background-image: url('img/dcorner10.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#location11 {
+    display: block;
+    position: absolute;
+    width: 10%;
+    height: 10%;
+    top: 180%;
+    left: 33%;
+    background-color: rgba(0, 255, 255, 0);
+    background-image: url('img/simbol2.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: url('img/cursor_hover.png') ,pointer;
+}
+
+#pic11 {
+    display: none;
+    position: absolute;
+    width: 32%;
+    height: 65%;
+    top: 130%;
+    left: 39%;
+    background-color: rgba(255, 228, 196, 0);
+    background-image: url('img/dcorner11.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#location12 {
+    display: block;
+    position: absolute;
+    width: 10%;
+    height: 10%;
+    top: 125%;
+    left: 75%;
+    background-color: rgba(0, 255, 255, 0);
+    background-image: url('img/simbol.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: url('img/cursor_hover.png') ,pointer;
+}
+
+#pic12 {
+    display: none;
+    position: absolute;
+    width: 32%;
+    height: 65%;
+    top: 100%;
+    left: 82%;
+    background-color: rgba(255, 228, 196, 0);
+    background-image: url('img/dcorner12.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#location13 {
+    display: block;
+    position: absolute;
+    width: 8%;
+    height: 8%;
+    top: 120%;
+    left: 13%;
+    background-color: rgba(0, 255, 255, 0);
+    background-image: url('img/simbol2.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: url('img/cursor_hover.png') ,pointer;
+}
+
+#pic13 {
+    display: none;
+    position: absolute;
+    width: 65%;
+    height: 32%;
+    top: 110%;
+    left: 20%;
+    background-color: rgba(255, 228, 196, 0);
+    background-image: url('img/dcorner13.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#location14 {
+    display: block;
+    position: absolute;
+    width: 6%;
+    height: 6%;
+    top: 123%;
+    left: 79%;
+    background-color: rgba(0, 255, 255, 0);
+    background-image: url('img/simbol2.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: url('img/cursor_hover.png') ,pointer;
+}
+
+#pic14 {
+    display: none;
+    position: absolute;
+    width: 32%;
+    height: 65%;
+    top: 100%;
+    left: 47%;
+    background-color: rgba(255, 228, 196, 0);
+    background-image: url('img/dcorner14.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#location15 {
+    display: block;
+    position: absolute;
+    width: 10%;
+    height: 10%;
+    top: 100%;
+    left: 83%;
+    background-color: rgba(0, 255, 255, 0);
+    background-image: url('img/simbol.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: url('img/cursor_hover.png') ,pointer;
+}
+
+#pic15 {
+    display: none;
+    position: absolute;
+    width: 32%;
+    height: 65%;
+    top: 80%;
+    left: 55%;
+    background-color: rgba(255, 228, 196, 0);
+    background-image: url('img/dcorner15.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#location16 {
+    display: block;
+    position: absolute;
+    width: 8%;
+    height: 8%;
+    top: 170%;
+    left: 35%;
+    background-color: rgba(0, 255, 255, 0);
+    background-image: url('img/simbol.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: url('img/cursor_hover.png') ,pointer;
+}
+
+#pic16 {
+    display: none;
+    position: absolute;
+    width: 32%;
+    height: 65%;
+    top: 120%;
+    left: 40%;
+    background-color: rgba(255, 228, 196, 0);
+    background-image: url('img/dcorner16.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#location17 {
+    display: block;
+    position: absolute;
+    width: 8%;
+    height: 8%;
+    top: 133%;
+    left: 78%;
+    background-color: rgba(0, 255, 255, 0);
+    background-image: url('img/simbol2.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: url('img/cursor_hover.png') ,pointer;
+}
+
+#pic17 {
+    display: none;
+    position: absolute;
+    width: 65%;
+    height: 32%;
+    top: 120%;
+    left: 83%;
+    background-color: rgba(255, 228, 196, 0);
+    background-image: url('img/dcorner17.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#location18 {
+    display: block;
+    position: absolute;
+    width: 9%;
+    height: 9%;
+    top: 50%;
+    left: 95%;
+    background-color: rgba(0, 255, 255, 0);
+    background-image: url('img/simbol.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: url('img/cursor_hover.png') ,pointer;
+}
+
+#pic18 {
+    display: none;
+    position: absolute;
+    width: 32%;
+    height: 65%;
+    top: 25%;
+    left: 62%;
+    background-color: rgba(255, 228, 196, 0);
+    background-image: url('img/dcorner18.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#location19 {
+    display: block;
+    position: absolute;
+    width: 7%;
+    height: 7%;
+    top: 87%;
+    left: 83%;
+    background-color: rgba(0, 255, 255, 0);
+    background-image: url('img/simbol2.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: url('img/cursor_hover.png') ,pointer;
+}
+
+#pic19 {
+    display: none;
+    position: absolute;
+    width: 32%;
+    height: 65%;
+    top: 50%;
+    left: 53%;
+    background-color: rgba(255, 228, 196, 0);
+    background-image: url('img/dcorner19.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#location20 {
+    display: block;
+    position: absolute;
+    width: 7%;
+    height: 7%;
+    top: 146%;
+    left: 45%;
+    background-color: rgba(0, 255, 255, 0);
+    background-image: url('img/simbol.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: url('img/cursor_hover.png') ,pointer;
+}
+
+#pic20 {
+    display: none;
+    position: absolute;
+    width: 32%;
+    height: 65%;
+    top: 130%;
+    left: 50%;
+    background-color: rgba(255, 228, 196, 0);
+    background-image: url('img/dcorner20.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#location21 {
+    display: block;
+    position: absolute;
+    width: 9%;
+    height: 9%;
+    top: 137%;
+    left: 65%;
+    background-color: rgba(0, 255, 255, 0);
+    background-image: url('img/simbol2.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: url('img/cursor_hover.png') ,pointer;
+}
+
+#pic21 {
+    display: none;
+    position: absolute;
+    width: 32%;
+    height: 65%;
+    top: 110%;
+    left: 71%;
+    background-color: rgba(255, 228, 196, 0);
+    background-image: url('img/dcorner21.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#location22 {
+    display: block;
+    position: absolute;
+    width: 8%;
+    height: 8%;
+    top: 125%;
+    left: 53%;
+    background-color: rgba(0, 255, 255, 0);
+    background-image: url('img/simbol2.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: url('img/cursor_hover.png') ,pointer;
+}
+
+#pic22 {
+    display: none;
+    position: absolute;
+    width: 32%;
+    height: 65%;
+    top: 117%;
+    left: 58%;
+    background-color: rgba(255, 228, 196, 0);
+    background-image: url('img/dcorner22.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#location23 {
+    display: block;
+    position: absolute;
+    width: 10%;
+    height: 10%;
+    top: 130%;
+    left: 50%;
+    background-color: rgba(0, 255, 255, 0);
+    background-image: url('img/simbol.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: url('img/cursor_hover.png') ,pointer;
+}
+
+#pic23 {
+    display: none;
+    position: absolute;
+    width: 32%;
+    height: 65%;
+    top: 130%;
+    left: 57%;
+    background-color: rgba(255, 228, 196, 0);
+    background-image: url('img/dcorner23.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#location24 {
+    display: block;
+    position: absolute;
+    width: 7%;
+    height: 7%;
+    top: 136%;
+    left: 48%;
+    background-color: rgba(0, 255, 255, 0);
+    background-image: url('img/simbol2.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: url('img/cursor_hover.png') ,pointer;
+}
+
+#pic24 {
+    display: none;
+    position: absolute;
+    width: 32%;
+    height: 65%;
+    top: 130%;
+    left: 53%;
+    background-color: rgba(255, 228, 196, 0);
+    background-image: url('img/dcorner24.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#location25 {
+    display: block;
+    position: absolute;
+    width: 7%;
+    height: 7%;
+    top: 145%;
+    left: 75%;
+    background-color: rgba(0, 255, 255, 0);
+    background-image: url('img/simbol.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: url('img/cursor_hover.png') ,pointer;
+}
+
+#pic25 {
+    display: none;
+    position: absolute;
+    width: 32%;
+    height: 65%;
+    top: 130%;
+    left: 80%;
+    background-color: rgba(255, 228, 196, 0);
+    background-image: url('img/dcorner25.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#location26 {
+    display: block;
+    position: absolute;
+    width: 12%;
+    height: 12%;
+    top: 145%;
+    left: 65%;
+    background-color: rgba(0, 255, 255, 0);
+    background-image: url('img/simbol.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: url('img/cursor_hover.png') ,pointer;
+}
+
+#pic26 {
+    display: none;
+    position: absolute;
+    width: 32%;
+    height: 65%;
+    top: 100%;
+    left: 73%;
+    background-color: rgba(255, 228, 196, 0);
+    background-image: url('img/dcorner26.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#location27 {
+    display: block;
+    position: absolute;
+    width: 10%;
+    height: 10%;
+    top: 52%;
+    left: 40%;
+    background-color: rgba(0, 255, 255, 0);
+    background-image: url('img/simbol2.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: url('img/cursor_hover.png') ,pointer;
+}
+
+#pic27 {
+    display: none;
+    position: absolute;
+    width: 32%;
+    height: 65%;
+    top: 45%;
+    left: 47%;
+    background-color: rgba(255, 228, 196, 0);
+    background-image: url('img/dcorner27.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#location28 {
+    display: block;
+    position: absolute;
+    width: 10%;
+    height: 10%;
+    top: 45%;
+    left: 17%;
+    background-color: rgba(0, 255, 255, 0);
+    background-image: url('img/simbol.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: url('img/cursor_hover.png') ,pointer;
+}
+
+#pic28 {
+    display: none;
+    position: absolute;
+    width: 32%;
+    height: 65%;
+    top: 20%;
+    left: 24%;
+    background-color: rgba(255, 228, 196, 0);
+    background-image: url('img/dcorner28.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#location29 {
+    display: block;
+    position: absolute;
+    width: 8%;
+    height: 8%;
+    top: 175%;
+    left: 8%;
+    background-color: rgba(0, 255, 255, 0);
+    background-image: url('img/simbol.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: url('img/cursor_hover.png') ,pointer;
+}
+
+#pic29 {
+    display: none;
+    position: absolute;
+    width: 32%;
+    height: 65%;
+    top: 140%;
+    left: 14%;
+    background-color: rgba(255, 228, 196, 0);
+    background-image: url('img/dcorner29.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#location30 {
+    display: block;
+    position: absolute;
+    width: 12%;
+    height: 12%;
+    top: 180%;
+    left: 10%;
+    background-color: rgba(0, 255, 255, 0);
+    background-image: url('img/simbol2.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: url('img/cursor_hover.png') ,pointer;
+}
+
+#pic30 {
+    display: none;
+    position: absolute;
+    width: 32%;
+    height: 65%;
+    top: 160%;
+    left: 18%;
+    background-color: rgba(255, 228, 196, 0);
+    background-image: url('img/dcorner30.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#location31 {
+    display: block;
+    position: absolute;
+    width: 6%;
+    height: 6%;
+    top: 180%;
+    left: 17%;
+    background-color: rgba(0, 255, 255, 0);
+    background-image: url('img/simbol.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: url('img/cursor_hover.png') ,pointer;
+}
+
+#pic31 {
+    display: none;
+    position: absolute;
+    width: 32%;
+    height: 65%;
+    top: 130%;
+    left: 21%;
+    background-color: rgba(255, 228, 196, 0);
+    background-image: url('img/dcorner31.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#location32 {
+    display: block;
+    position: absolute;
+    width: 7%;
+    height: 7%;
+    top: 60%;
+    left: 30%;
+    background-color: rgba(0, 255, 255, 0);
+    background-image: url('img/simbol.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: url('img/cursor_hover.png') ,pointer;
+}
+
+#pic32 {
+    display: none;
+    position: absolute;
+    width: 32%;
+    height: 65%;
+    top: 30%;
+    left: 35%;
+    background-color: rgba(255, 228, 196, 0);
+    background-image: url('img/dcorner32.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#location33 {
+    display: block;
+    position: absolute;
+    width: 9%;
+    height: 9%;
+    top: 20%;
+    left: 60%;
+    background-color: rgba(0, 255, 255, 0);
+    background-image: url('img/simbol.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: url('img/cursor_hover.png') ,pointer;
+}
+
+#pic33 {
+    display: none;
+    position: absolute;
+    width: 23%;
+    height: 65%;
+    top: 23%;
+    left: 66%;
+    background-color: rgba(255, 228, 196, 0);
+    background-image: url('img/dcorner33.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#location34 {
+    display: block;
+    position: absolute;
+    width: 8%;
+    height: 8%;
+    top: 15%;
+    left: 60%;
+    background-color: rgba(0, 255, 255, 0);
+    background-image: url('img/simbol2.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: url('img/cursor_hover.png') ,pointer;
+}
+
+#pic34 {
+    display: none;
+    position: absolute;
+    width: 32%;
+    height: 65%;
+    top: 15%;
+    left: 66%;
+    background-color: rgba(255, 228, 196, 0);
+    background-image: url('img/dcorner34.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#location35 {
+    display: block;
+    position: absolute;
+    width: 8%;
+    height: 8%;
+    top: 188%;
+    left: 20%;
+    background-color: rgba(0, 255, 255, 0);
+    background-image: url('img/simbol.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: url('img/cursor_hover.png') ,pointer;
+}
+
+#pic35 {
+    display: none;
+    position: absolute;
+    width: 32%;
+    height: 65%;
+    top: 140%;
+    left: 26%;
+    background-color: rgba(255, 228, 196, 0);
+    background-image: url('img/dcorner35.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#location36 {
+    display: block;
+    position: absolute;
+    width: 8%;
+    height: 8%;
+    top: 54%;
+    left: 50%;
+    background-color: rgba(0, 255, 255, 0);
+    background-image: url('img/simbol2.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: url('img/cursor_hover.png') ,pointer;
+}
+
+#pic36 {
+    display: none;
+    position: absolute;
+    width: 32%;
+    height: 65%;
+    top: 25%;
+    left: 55%;
+    background-color: rgba(255, 228, 196, 0);
+    background-image: url('img/dcorner36.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#location37 {
+    display: block;
+    position: absolute;
+    width: 7%;
+    height: 7%;
+    top: 48%;
+    left: 40%;
+    background-color: rgba(0, 255, 255, 0);
+    background-image: url('img/simbol.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: url('img/cursor_hover.png') ,pointer;
+}
+
+#pic37 {
+    display: none;
+    position: absolute;
+    width: 32%;
+    height: 65%;
+    top: 20%;
+    left: 10%;
+    background-color: rgba(255, 228, 196, 0);
+    background-image: url('img/dcorner37.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#location38 {
+    display: block;
+    position: absolute;
+    width: 10%;
+    height: 10%;
+    top: 35%;
+    left: 43%;
+    background-color: rgba(0, 255, 255, 0);
+    background-image: url('img/simbol2.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: url('img/cursor_hover.png') ,pointer;
+}
+
+#pic38 {
+    display: none;
+    position: absolute;
+    width: 32%;
+    height: 65%;
+    top: 25%;
+    left: 50%;
+    background-color: rgba(255, 228, 196, 0);
+    background-image: url('img/dcorner38.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#location39 {
+    display: block;
+    position: absolute;
+    width: 14%;
+    height: 14%;
+    top: 42%;
+    left: 48%;
+    background-color: rgba(0, 255, 255, 0);
+    background-image: url('img/simbol.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: url('img/cursor_hover.png') ,pointer;
+}
+
+#pic39 {
+    display: none;
+    position: absolute;
+    width: 32%;
+    height: 65%;
+    top: 20%;
+    left: 57%;
+    background-color: rgba(255, 228, 196, 0);
+    background-image: url('img/dcorner39.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#location40 {
+    display: block;
+    position: absolute;
+    width: 7%;
+    height: 7%;
+    top: 42%;
+    left: 46%;
+    background-color: rgba(0, 255, 255, 0);
+    background-image: url('img/simbol.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: url('img/cursor_hover.png') ,pointer;
+}
+
+#pic40 {
+    display: none;
+    position: absolute;
+    width: 32%;
+    height: 65%;
+    top: 30%;
+    left: 51%;
+    background-color: rgba(255, 228, 196, 0);
+    background-image: url('img/dcorner40.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#location41 {
+    display: block;
+    position: absolute;
+    width: 10%;
+    height: 10%;
+    top: 75%;
+    left: 10%;
+    background-color: rgba(0, 255, 255, 0);
+    background-image: url('img/simbol2.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: url('img/cursor_hover.png') ,pointer;
+}
+
+#pic41 {
+    display: none;
+    position: absolute;
+    width: 32%;
+    height: 65%;
+    top: 23%;
+    left: 17%;
+    background-color: rgba(255, 228, 196, 0);
+    background-image: url('img/dcorner41.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#location42 {
+    display: block;
+    position: absolute;
+    width: 7%;
+    height: 7%;
+    top: 51%;
+    left: 15%;
+    background-color: rgba(0, 255, 255, 0);
+    background-image: url('img/simbol2.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: url('img/cursor_hover.png') ,pointer;
+}
+
+#pic42 {
+    display: none;
+    position: absolute;
+    width: 32%;
+    height: 65%;
+    top: 30%;
+    left: 20%;
+    background-color: rgba(255, 228, 196, 0);
+    background-image: url('img/dcorner42.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#location43 {
+    display: block;
+    position: absolute;
+    width: 7%;
+    height: 7%;
+    top: 0%;
+    left: 83%;
+    background-color: rgba(0, 255, 255, 0);
+    background-image: url('img/simbol.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: url('img/cursor_hover.png') ,pointer;
+}
+
+#pic43 {
+    display: none;
+    position: absolute;
+    width: 32%;
+    height: 65%;
+    top: 0%;
+    left: 88%;
+    background-color: rgba(255, 228, 196, 0);
+    background-image: url('img/dcorner43.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.scroll {
+    display: block;
+    position: absolute;
+    width: 62.5%;
+    height: 56%;
+    top: 19%;
+    left: 18%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    background-color: rgba(255, 184, 207, 0);
+}
+
+.scroll::-webkit-scrollbar {
+    width: 8px;
+}
+
+.scroll::-webkit-scrollbar-thumb {
+    height: 5%;
+    background: black;
+}
+
+.scroll::-webkit-scrollbar-track {
+    background: none;
+}
+
+#project {
+    display: block;
+    position: relative;
+    top: 1%;
+    left: 1%;
+    width: 99%;
+    height: 1000%;
+    background-color: rgba(127, 255, 212, 0);
+
+}
+
+#project > img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
