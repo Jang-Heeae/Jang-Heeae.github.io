@@ -1627,6 +1627,19 @@ a:hover {
     background-color: rgba(0, 255, 255, 0);
 }
 
+#hint_loc {
+    display: block;
+    position: absolute;
+    top: 90%;
+    left: 2%;
+    width: 3%;
+    height: 9%;
+    background-color: rgba(0, 255, 255, 0);
+    background-image: url("img/loc.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
 #map-frame {
     display: flex;
     position: absolute;
