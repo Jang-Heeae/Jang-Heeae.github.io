@@ -1661,7 +1661,7 @@ a:hover {
     width: 8%;
     height: 8%;
     top: 90%;
-    left: 30%;
+    left: 13vw;
     background-color: rgba(0, 255, 255, 0);
     background-image: url('img/simbol.png');
     background-size: contain;
@@ -1688,7 +1688,7 @@ a:hover {
     width: 12%;
     height: 12%;
     top: 20%;
-    left: 50%;
+    left: 21.7vw;
     background-color: rgba(0, 255, 255, 0);
     background-image: url('img/simbol.png');
     background-size: contain;
@@ -1715,7 +1715,7 @@ a:hover {
     width: 12%;
     height: 12%;
     top: 80%;
-    left: 85%;
+    left: 36.9vw;
     background-color: rgba(0, 255, 255, 0);
     background-image: url('img/simbol.png');
     background-size: contain;
@@ -1742,7 +1742,7 @@ a:hover {
     width: 9%;
     height: 9%;
     top: 36%;
-    left: 24%;
+    left: 10.4vw;
     background-color: rgba(0, 255, 255, 0);
     background-image: url('img/simbol.png');
     background-size: contain;
@@ -1769,12 +1769,12 @@ a:hover {
     width: 8%;
     height: 8%;
     top: 150%;
-    left: 20%;
+    left: 8.7vw;
     background-color: rgba(0, 255, 255, 0);
     background-image: url('img/simbol.png');
     background-size: contain;
     background-repeat: no-repeat;
-    cursor: url('img/커서_호버.png') ,pointer;
+    cursor: url('img/cursor_hover.png') ,pointer;
 }
 
 #pic5 {
@@ -1796,7 +1796,7 @@ a:hover {
     width: 14%;
     height: 14%;
     top: 150%;
-    left: 40%;
+    left: 17.3vw;
     background-color: rgba(0, 255, 255, 0);
     background-image: url('img/simbol2.png');
     background-size: contain;
@@ -1823,7 +1823,7 @@ a:hover {
     width: 12%;
     height: 12%;
     top: 30%;
-    left: 90%;
+    left: 39.1vw;
     background-color: rgba(0, 255, 255, 0);
     background-image: url('img/simbol2.png');
     background-size: contain;
@@ -1850,7 +1850,7 @@ a:hover {
     width: 8%;
     height: 8%;
     top: 137%;
-    left: 57%;
+    left: 24.8vw;
     background-color: rgba(0, 255, 255, 0);
     background-image: url('img/simbol2.png');
     background-size: contain;
@@ -1877,7 +1877,7 @@ a:hover {
     width: 11%;
     height: 11%;
     top: 0%;
-    left: 70%;
+    left: 30.4vw;
     background-color: rgba(0, 255, 255, 0);
     background-image: url('img/simbol.png');
     background-size: contain;
@@ -1890,7 +1890,7 @@ a:hover {
     position: absolute;
     width: 65%;
     height: 32%;
-    top: -10%;
+    top: 0%;
     left: 75%;
     background-color: rgba(255, 228, 196, 0);
     background-image: url('img/dcorner9.png');
@@ -1904,7 +1904,7 @@ a:hover {
     width: 11%;
     height: 11%;
     top: 110%;
-    left: 13%;
+    left: 5.6vw;
     background-color: rgba(0, 255, 255, 0);
     background-image: url('img/simbol.png');
     background-size: contain;
@@ -1917,7 +1917,7 @@ a:hover {
     position: absolute;
     width: 65%;
     height: 32%;
-    top: 113%;
+    top: 105%;
     left: 20%;
     background-color: rgba(255, 228, 196, 0);
     background-image: url('img/dcorner10.png');
@@ -1931,7 +1931,7 @@ a:hover {
     width: 10%;
     height: 10%;
     top: 180%;
-    left: 33%;
+    left: 14.3vw;
     background-color: rgba(0, 255, 255, 0);
     background-image: url('img/simbol2.png');
     background-size: contain;
@@ -1958,7 +1958,7 @@ a:hover {
     width: 10%;
     height: 10%;
     top: 125%;
-    left: 75%;
+    left: 32.6vw;
     background-color: rgba(0, 255, 255, 0);
     background-image: url('img/simbol.png');
     background-size: contain;
@@ -1985,7 +1985,7 @@ a:hover {
     width: 8%;
     height: 8%;
     top: 120%;
-    left: 13%;
+    left: 5.7vw;
     background-color: rgba(0, 255, 255, 0);
     background-image: url('img/simbol2.png');
     background-size: contain;
@@ -1999,7 +1999,7 @@ a:hover {
     width: 65%;
     height: 32%;
     top: 110%;
-    left: 20%;
+    left: 19%;
     background-color: rgba(255, 228, 196, 0);
     background-image: url('img/dcorner13.png');
     background-size: contain;
@@ -2012,7 +2012,7 @@ a:hover {
     width: 6%;
     height: 6%;
     top: 123%;
-    left: 79%;
+    left: 34.3vw;
     background-color: rgba(0, 255, 255, 0);
     background-image: url('img/simbol2.png');
     background-size: contain;
@@ -2039,7 +2039,7 @@ a:hover {
     width: 10%;
     height: 10%;
     top: 100%;
-    left: 83%;
+    left: 36vw;
     background-color: rgba(0, 255, 255, 0);
     background-image: url('img/simbol.png');
     background-size: contain;
@@ -2066,7 +2066,7 @@ a:hover {
     width: 8%;
     height: 8%;
     top: 170%;
-    left: 35%;
+    left: 15.1vw;
     background-color: rgba(0, 255, 255, 0);
     background-image: url('img/simbol.png');
     background-size: contain;
@@ -2093,7 +2093,7 @@ a:hover {
     width: 8%;
     height: 8%;
     top: 133%;
-    left: 78%;
+    left: 34vw;
     background-color: rgba(0, 255, 255, 0);
     background-image: url('img/simbol2.png');
     background-size: contain;
@@ -2120,7 +2120,7 @@ a:hover {
     width: 9%;
     height: 9%;
     top: 50%;
-    left: 95%;
+    left: 41.4vw;
     background-color: rgba(0, 255, 255, 0);
     background-image: url('img/simbol.png');
     background-size: contain;
@@ -2147,7 +2147,7 @@ a:hover {
     width: 7%;
     height: 7%;
     top: 87%;
-    left: 83%;
+    left: 36vw;
     background-color: rgba(0, 255, 255, 0);
     background-image: url('img/simbol2.png');
     background-size: contain;
@@ -2174,7 +2174,7 @@ a:hover {
     width: 7%;
     height: 7%;
     top: 146%;
-    left: 45%;
+    left: 19.5vw;
     background-color: rgba(0, 255, 255, 0);
     background-image: url('img/simbol.png');
     background-size: contain;
@@ -2201,7 +2201,7 @@ a:hover {
     width: 9%;
     height: 9%;
     top: 137%;
-    left: 65%;
+    left: 28.2vw;
     background-color: rgba(0, 255, 255, 0);
     background-image: url('img/simbol2.png');
     background-size: contain;
@@ -2228,7 +2228,7 @@ a:hover {
     width: 8%;
     height: 8%;
     top: 125%;
-    left: 53%;
+    left: 23vw;
     background-color: rgba(0, 255, 255, 0);
     background-image: url('img/simbol2.png');
     background-size: contain;
@@ -2255,7 +2255,7 @@ a:hover {
     width: 10%;
     height: 10%;
     top: 130%;
-    left: 50%;
+    left: 21.8vw;
     background-color: rgba(0, 255, 255, 0);
     background-image: url('img/simbol.png');
     background-size: contain;
@@ -2282,7 +2282,7 @@ a:hover {
     width: 7%;
     height: 7%;
     top: 136%;
-    left: 48%;
+    left: 20.9vw;
     background-color: rgba(0, 255, 255, 0);
     background-image: url('img/simbol2.png');
     background-size: contain;
@@ -2309,7 +2309,7 @@ a:hover {
     width: 7%;
     height: 7%;
     top: 145%;
-    left: 75%;
+    left: 32.6vw;
     background-color: rgba(0, 255, 255, 0);
     background-image: url('img/simbol.png');
     background-size: contain;
@@ -2336,7 +2336,7 @@ a:hover {
     width: 12%;
     height: 12%;
     top: 145%;
-    left: 65%;
+    left: 28.2vw;
     background-color: rgba(0, 255, 255, 0);
     background-image: url('img/simbol.png');
     background-size: contain;
@@ -2363,7 +2363,7 @@ a:hover {
     width: 10%;
     height: 10%;
     top: 52%;
-    left: 40%;
+    left: 17.4vw;
     background-color: rgba(0, 255, 255, 0);
     background-image: url('img/simbol2.png');
     background-size: contain;
@@ -2390,7 +2390,7 @@ a:hover {
     width: 10%;
     height: 10%;
     top: 45%;
-    left: 17%;
+    left: 7.4vw;
     background-color: rgba(0, 255, 255, 0);
     background-image: url('img/simbol.png');
     background-size: contain;
@@ -2417,7 +2417,7 @@ a:hover {
     width: 8%;
     height: 8%;
     top: 175%;
-    left: 8%;
+    left: 3.5vw;
     background-color: rgba(0, 255, 255, 0);
     background-image: url('img/simbol.png');
     background-size: contain;
@@ -2444,7 +2444,7 @@ a:hover {
     width: 12%;
     height: 12%;
     top: 180%;
-    left: 10%;
+    left: 4.4vw;
     background-color: rgba(0, 255, 255, 0);
     background-image: url('img/simbol2.png');
     background-size: contain;
@@ -2471,7 +2471,7 @@ a:hover {
     width: 6%;
     height: 6%;
     top: 180%;
-    left: 17%;
+    left: 7.4vw;
     background-color: rgba(0, 255, 255, 0);
     background-image: url('img/simbol.png');
     background-size: contain;
@@ -2498,7 +2498,7 @@ a:hover {
     width: 7%;
     height: 7%;
     top: 60%;
-    left: 30%;
+    left: 13.1vw;
     background-color: rgba(0, 255, 255, 0);
     background-image: url('img/simbol.png');
     background-size: contain;
@@ -2525,7 +2525,7 @@ a:hover {
     width: 9%;
     height: 9%;
     top: 20%;
-    left: 60%;
+    left: 26.2vw;
     background-color: rgba(0, 255, 255, 0);
     background-image: url('img/simbol.png');
     background-size: contain;
@@ -2552,7 +2552,7 @@ a:hover {
     width: 8%;
     height: 8%;
     top: 15%;
-    left: 60%;
+    left: 26.1vw;
     background-color: rgba(0, 255, 255, 0);
     background-image: url('img/simbol2.png');
     background-size: contain;
@@ -2579,7 +2579,7 @@ a:hover {
     width: 8%;
     height: 8%;
     top: 188%;
-    left: 20%;
+    left: 8.6vw;
     background-color: rgba(0, 255, 255, 0);
     background-image: url('img/simbol.png');
     background-size: contain;
@@ -2606,7 +2606,7 @@ a:hover {
     width: 8%;
     height: 8%;
     top: 54%;
-    left: 50%;
+    left: 21.7vw;
     background-color: rgba(0, 255, 255, 0);
     background-image: url('img/simbol2.png');
     background-size: contain;
@@ -2633,7 +2633,7 @@ a:hover {
     width: 7%;
     height: 7%;
     top: 48%;
-    left: 40%;
+    left: 17.3vw;
     background-color: rgba(0, 255, 255, 0);
     background-image: url('img/simbol.png');
     background-size: contain;
@@ -2660,7 +2660,7 @@ a:hover {
     width: 10%;
     height: 10%;
     top: 35%;
-    left: 43%;
+    left: 18.7vw;
     background-color: rgba(0, 255, 255, 0);
     background-image: url('img/simbol2.png');
     background-size: contain;
@@ -2687,7 +2687,7 @@ a:hover {
     width: 14%;
     height: 14%;
     top: 42%;
-    left: 48%;
+    left: 20.9vw;
     background-color: rgba(0, 255, 255, 0);
     background-image: url('img/simbol.png');
     background-size: contain;
@@ -2714,7 +2714,7 @@ a:hover {
     width: 7%;
     height: 7%;
     top: 42%;
-    left: 46%;
+    left: 20.1vw;
     background-color: rgba(0, 255, 255, 0);
     background-image: url('img/simbol.png');
     background-size: contain;
@@ -2741,7 +2741,7 @@ a:hover {
     width: 10%;
     height: 10%;
     top: 75%;
-    left: 10%;
+    left: 4.3vw;
     background-color: rgba(0, 255, 255, 0);
     background-image: url('img/simbol2.png');
     background-size: contain;
@@ -2768,7 +2768,7 @@ a:hover {
     width: 7%;
     height: 7%;
     top: 51%;
-    left: 15%;
+    left: 6.5vw;
     background-color: rgba(0, 255, 255, 0);
     background-image: url('img/simbol2.png');
     background-size: contain;
@@ -2795,7 +2795,7 @@ a:hover {
     width: 7%;
     height: 7%;
     top: 0%;
-    left: 83%;
+    left: 36.2vw;
     background-color: rgba(0, 255, 255, 0);
     background-image: url('img/simbol.png');
     background-size: contain;
